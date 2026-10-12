@@ -114,6 +114,15 @@ export default function Navbar() {
               {item.label}
             </Link>
           ))}
+          <Link
+            className="nav-menu-signup"
+            href={SIGNUP_URL}
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => setMenuOpen(false)}
+          >
+            Sign Up
+          </Link>
         </div>
 
         <Link

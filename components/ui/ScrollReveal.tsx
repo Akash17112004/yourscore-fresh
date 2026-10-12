@@ -12,7 +12,10 @@ export default function ScrollReveal({ children, delay = 0 }: { children: ReactN
     const el = ref.current;
     if (!el) return;
 
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    // ScrollTrigger adds avoidable work on touch devices. Content remains fully
+    // visible there, while the reveal treatment is preserved for larger screens.
+    const motionOK = window.matchMedia('(min-width: 768px) and (prefers-reduced-motion: no-preference)').matches;
+    if (!motionOK) {
       gsap.set(el, { opacity: 1, y: 0 });
       return;
     }

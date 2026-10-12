@@ -85,6 +85,13 @@ const DepthText = ({
       return undefined;
     }
 
+    // Touch devices cannot use cursor tracking. Do not keep a render loop alive
+    // when there is no pointer interaction or orbit to animate.
+    if (!canTrackPointer && !autoOrbit) {
+      applyTransform();
+      return undefined;
+    }
+
     const handlePointerMove = (event) => {
       const rect = root.getBoundingClientRect();
       if (!rect.width || !rect.height) return;

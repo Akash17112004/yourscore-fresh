@@ -20,6 +20,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -28,6 +29,11 @@ body {
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
   cursor: auto;
+  min-width: 320px;
+}
+
+img, svg {
+  max-width: 100%;
 }
 
 a, button, input, textarea {
@@ -163,6 +169,10 @@ input:focus, textarea:focus {
   transition: transform 180ms ease;
 }
 
+.nav-menu-signup {
+  display: none;
+}
+
 ::selection {
   background: var(--red);
   color: var(--white);
@@ -254,13 +264,19 @@ canvas {
     padding: 13px 14px !important;
   }
 
-  .nav-menu-open .nav-cta {
-    display: block !important;
-    position: absolute;
-    top: calc(100% + 244px);
-    left: 10px;
-    right: 10px;
+  .nav-menu-open .nav-menu-signup {
+    display: block;
+    margin-top: 4px;
+    padding: 13px 14px;
+    border-radius: 14px;
+    background: var(--red);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .1em;
     text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
   }
 
   .nav-menu-open .mobile-nav-toggle span:first-child {
@@ -591,5 +607,75 @@ canvas {
 @media (max-width: 640px) {
   .hero-image {
     display: none;
+  }
+}
+
+/* Touch-first layout and motion safeguards. */
+@media (max-width: 767px) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .marketing-site {
+    overflow-x: clip;
+  }
+
+  .site-nav {
+    padding: 10px 12px !important;
+  }
+
+  .nav-pill {
+    width: calc(100vw - 24px) !important;
+    min-height: 58px;
+  }
+
+  .nav-menu-open .nav-links {
+    max-height: calc(100svh - 92px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .hero-section {
+    min-height: auto !important;
+    align-items: flex-start;
+    padding: 118px 0 48px !important;
+  }
+
+  .hero-heading {
+    max-width: 100%;
+    font-size: clamp(52px, 15vw, 68px);
+  }
+
+  .hero-subtext {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .page-hero {
+    min-height: auto;
+    padding: 126px 0 64px;
+  }
+
+  .page-hero-copy {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .inquiry-form {
+    padding: 22px 18px;
+  }
+
+  .page-hero .page-frame,
+  .page-hero .eyebrow,
+  .page-hero h1,
+  .page-hero-copy,
+  .hero-content > .eyebrow,
+  .home-kicker,
+  .hero-depth-title,
+  .hero-stats,
+  .page-hero-orb--one,
+  .page-hero-orb--two,
+  .mentor-monogram-card span {
+    animation: none !important;
   }
 }
