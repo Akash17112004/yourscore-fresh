@@ -8,7 +8,7 @@ import MarketingLayout from '@/components/layout/MarketingLayout';
 import DepthText from '@/components/ui/DepthText';
 import ScrollReveal from '@/components/ui/ScrollReveal';
 
-const SIGNUP_URL = 'https://testprep.admissionsgateway.com/learn';
+const SIGNUP_URL = 'https://testprep.admissionsgateway.com/learn/account/signup';
 
 const destinations = [
   {

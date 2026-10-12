@@ -418,7 +418,7 @@ canvas {
 .marketing-site { min-height: 100vh; background: var(--white); overflow: hidden; }
 .page-frame { width: min(1240px, calc(100% - 120px)); margin-inline: auto; }
 .eyebrow { color: var(--red); font-size: 11px; font-weight: 700; letter-spacing: .28em; line-height: 1.4; text-transform: uppercase; }
-.primary-link { display: inline-flex; align-items: center; gap: 12px; background: var(--red); color: #fff; padding: 15px 24px; font-size: 13px; font-weight: 700; letter-spacing: .04em; text-decoration: none; }
+.primary-link { display: inline-flex; align-items: center; gap: 12px; background: var(--red); color: #fff; padding: 15px 24px; border: 1px solid var(--border); border-radius: 999px; font-size: 13px; font-weight: 700; letter-spacing: .04em; text-decoration: none; }
 .primary-link:hover { background: var(--red-light); transform: translateY(-2px); box-shadow: 0 14px 28px rgba(139,0,0,.18); }
 .primary-link span { font-size: 18px; line-height: 0; }
 .site-loader { position: fixed; inset: 0; z-index: 1000; display: grid; place-content: center; background: var(--black); color: #fff; font-family: Georgia, serif; font-size: clamp(52px, 11vw, 120px); font-weight: 900; letter-spacing: -.08em; line-height: .8; }

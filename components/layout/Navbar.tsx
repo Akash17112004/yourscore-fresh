@@ -11,7 +11,7 @@ const navItems = [
   { label: 'Contact', href: '/contact' },
 ];
 
-const SIGNUP_URL = 'https://testprep.admissionsgateway.com/learn';
+const SIGNUP_URL = 'https://testprep.admissionsgateway.com/learn/account/signup';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
