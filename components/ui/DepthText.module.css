@@ -54,3 +54,32 @@
 @media (prefers-reduced-motion: reduce) {
   .stage { will-change: auto; }
 }
+
+/* A 3D grid has an intrinsic width based on every duplicate text layer. On a
+   narrow viewport that can exceed its heading and clip the last letters. Keep
+   the effect for pointer devices, and use the readable face on touch screens. */
+@media (max-width: 767px) {
+  .depthText {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    perspective: none;
+  }
+
+  .stage {
+    display: block;
+    max-width: 100%;
+    transform: none !important;
+    will-change: auto;
+  }
+
+  .layer {
+    display: none;
+  }
+
+  .face {
+    max-width: 100%;
+    white-space: normal;
+    transform: none;
+  }
+}

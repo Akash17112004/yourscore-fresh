@@ -627,6 +627,13 @@ canvas {
   .nav-pill {
     width: calc(100vw - 24px) !important;
     min-height: 58px;
+    padding: 10px 12px 10px 16px !important;
+  }
+
+  .mobile-nav-toggle {
+    display: grid !important;
+    flex: 0 0 38px;
+    place-content: center;
   }
 
   .nav-menu-open .nav-links {
@@ -643,7 +650,15 @@ canvas {
 
   .hero-heading {
     max-width: 100%;
-    font-size: clamp(52px, 15vw, 68px);
+    font-size: clamp(44px, 12vw, 54px) !important;
+    letter-spacing: -.065em;
+    line-height: .92;
+    overflow: visible;
+  }
+
+  .hero-depth-title {
+    max-width: 100%;
+    overflow: visible;
   }
 
   .hero-subtext {
