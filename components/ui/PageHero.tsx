@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import DepthText from './DepthText';
 
 type PageHeroProps = {
   eyebrow: string;
@@ -14,7 +15,17 @@ export default function PageHero({ eyebrow, title, children }: PageHeroProps) {
 
       <div className="page-frame">
         <p className="eyebrow">{eyebrow}</p>
-        <h1>{title}</h1>
+        <h1>
+          <DepthText
+            className="page-title-depth"
+            text={title}
+            faceColor="var(--black)"
+            depthColor="var(--red)"
+            fontSize="inherit"
+            lineHeight="inherit"
+            letterSpacing="inherit"
+          />
+        </h1>
         {children ? <p className="page-hero-copy">{children}</p> : null}
       </div>
     </header>

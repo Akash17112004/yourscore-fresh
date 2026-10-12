@@ -3,14 +3,14 @@
 import { useEffect, useMemo, useRef } from 'react';
 import styles from './DepthText.module.css';
 
-const MAX_LAYERS = 64;
+const MAX_LAYERS = 24;
 
 const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
 const getLayerColor = (faceColor, depthColor, index, total) => {
   const progress = total <= 1 ? 1 : index / total;
-  const eased = progress * progress;
-  const faceMix = Math.round((1 - eased) * 72 + 4);
+  // Keep the face dominant, with just enough of the depth colour showing at the edge.
+  const faceMix = Math.round(90 - progress * 34);
   return `color-mix(in srgb, ${faceColor} ${faceMix}%, ${depthColor})`;
 };
 
@@ -18,18 +18,20 @@ const getTransform = (rotateX, rotateY) => `rotateX(${rotateX.toFixed(3)}deg) ro
 
 const DepthText = ({
   text = 'Elevate',
-  layers = 34,
-  depth = 2.4,
+  layers = 6,
+  depth = 0.48,
   faceColor = '#f8fafc',
   depthColor = '#7c3aed',
-  tilt = 7.5,
+  tilt = 5,
   pointerTracking = true,
   smoothing = 0.14,
   perspective = 900,
-  autoOrbit = true,
-  orbitSpeed = 0.35,
+  autoOrbit = false,
+  orbitSpeed = 0,
   fontSize = 'clamp(3rem, 12vw, 7rem)',
   fontWeight = 900,
+  lineHeight = 0.86,
+  letterSpacing = '-0.065em',
   shadow = true,
   className = '',
   style = {}
@@ -52,7 +54,9 @@ const DepthText = ({
       return {
         index,
         color: getLayerColor(faceColor, depthColor, index, safeLayers),
-        transform: `translateZ(${-index * safeDepth}px)`
+        // A very small offset makes the extrusion readable without turning the
+        // heading into a heavy 3D treatment.
+        transform: `translate3d(${(index * safeDepth * 0.38).toFixed(3)}px, ${(index * safeDepth * 0.54).toFixed(3)}px, ${(-index * safeDepth).toFixed(3)}px)`
       };
     }),
     [safeLayers, safeDepth, faceColor, depthColor]
@@ -136,10 +140,12 @@ const DepthText = ({
     '--depth-text-perspective': `${safePerspective}px`,
     '--depth-text-font-size': fontSize,
     '--depth-text-font-weight': fontWeight,
+    '--depth-text-line-height': lineHeight,
+    '--depth-text-letter-spacing': letterSpacing,
     '--depth-text-face-color': faceColor,
     '--depth-text-depth-color': depthColor,
     '--depth-text-shadow': shadow
-      ? `0 22px 34px color-mix(in srgb, ${depthColor} 36%, transparent), 0 4px 8px rgba(0, 0, 0, 0.28)`
+      ? `1px 1px 0 color-mix(in srgb, ${depthColor} 76%, #000 24%), 2px 2px 0 color-mix(in srgb, ${depthColor} 56%, #000 44%), 0 5px 12px color-mix(in srgb, ${depthColor} 12%, transparent)`
       : 'none'
   };
 
@@ -147,7 +153,16 @@ const DepthText = ({
     <span ref={rootRef} className={`${styles.depthText} ${className}`.trim()} style={rootStyle}>
       <span ref={stageRef} className={styles.stage}>
         {depthLayers.map((layer) => (
-          <span aria-hidden="true" className={styles.layer} key={layer.index} style={{ color: layer.color, transform: layer.transform }}>
+          <span
+            aria-hidden="true"
+            className={styles.layer}
+            key={layer.index}
+            style={{
+              color: layer.color,
+              opacity: 0.36 + (layer.index / safeLayers) * 0.34,
+              transform: layer.transform,
+            }}
+          >
             {text}
           </span>
         ))}

@@ -1,12 +1,14 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 import MarketingLayout from '@/components/layout/MarketingLayout';
+import DepthText from '@/components/ui/DepthText';
 import ScrollReveal from '@/components/ui/ScrollReveal';
 
-const SIGNUP_URL = 'https://yourscore.learnyst.com/sign-up';
+const SIGNUP_URL = 'https://testprep.admissionsgateway.com/learn';
 
 const destinations = [
   {
@@ -81,33 +83,6 @@ const processSteps = [
   },
 ];
 
-const teamMembers = [
-  {
-    name: 'Shweta Gurnani Singh',
-    role: 'Chief Academic Mentor',
-    bio: 'Guides students with diagnostic precision, strategic focus, and a clear framework for sustainable score improvement.',
-    initials: 'SG',
-  },
-  {
-    name: 'Team Member 2',
-    role: 'Academic Strategist',
-    bio: 'Placeholder bio. Add this team member’s expertise, coaching approach, and the value they bring to students.',
-    initials: 'T2',
-  },
-  {
-    name: 'Team Member 3',
-    role: 'Student Success Lead',
-    bio: 'Placeholder bio. Describe how this team member supports students and keeps preparation moving forward.',
-    initials: 'T3',
-  },
-  {
-    name: 'Team Member 4',
-    role: 'Mentor / Coach',
-    bio: 'Placeholder bio. Replace this card with a real team member’s name, role, and short introduction.',
-    initials: 'T4',
-  },
-];
-
 const testimonialStories = [
   { score: 'GMAT 790', school: 'Harvard', quote: 'The plan did not just raise my score; it gave me clarity on where to focus and how to stay calm under pressure.', name: 'Sushant Sudheendranath' },
   { score: 'GMAT 770', school: 'Wharton', quote: 'Every session had a purpose. I could see the strategy shift from vague effort to tactical progress.', name: 'Sanchit Dayal' },
@@ -137,6 +112,16 @@ export default function Home() {
   return (
     <MarketingLayout>
       <section className="hero-section">
+        <div className="hero-image" aria-hidden="true">
+          <Image
+            src="/images/business-school-classroom.jpg"
+            alt=""
+            fill
+            priority
+            sizes="(max-width: 900px) 100vw, 52vw"
+          />
+        </div>
+
         <div className="page-frame hero-content">
           <p className="eyebrow">GMAT · GRE · EA · SAT</p>
 
@@ -145,8 +130,15 @@ export default function Home() {
           </p>
 
           <h1 className="hero-heading">
-            Your exam.
-            <span>Your score.</span>
+            <DepthText
+              className="hero-depth-title"
+              text={<>Your exam.<br /><em>Your score.</em></>}
+              faceColor="var(--black)"
+              depthColor="var(--red)"
+              fontSize="inherit"
+              lineHeight="inherit"
+              letterSpacing="inherit"
+            />
           </h1>
 
           <p className="hero-subtext">
@@ -247,29 +239,6 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      <section id="our-team" className="team-section page-frame">
-        <div className="section-heading center-heading">
-          <p className="eyebrow">Our team</p>
-          <h2>
-            Mentors who bring<br />
-            <em>clarity to the process.</em>
-          </h2>
-        </div>
-
-        <div className="team-grid">
-          {teamMembers.map((member) => (
-            <article className="team-card" key={member.name}>
-              <div className="team-photo" aria-label={member.name}>
-                {member.initials}
-              </div>
-              <h3>{member.name}</h3>
-              <p className="team-role">{member.role}</p>
-              <p className="team-bio">{member.bio}</p>
-            </article>
-          ))}
         </div>
       </section>
 

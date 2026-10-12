@@ -6,12 +6,12 @@ import { usePathname } from 'next/navigation';
 const navItems = [
   { label: 'Approach & Process', href: '/#approach-process' },
   { label: 'Mentor', href: '/mentor' },
-  { label: 'Our Team', href: '/#our-team' },
+  { label: 'Our Team', href: '/our-team' },
   { label: 'Results', href: '/results' },
   { label: 'Contact', href: '/contact' },
 ];
 
-const SIGNUP_URL = 'https://yourscore.learnyst.com/sign-up';
+const SIGNUP_URL = 'https://testprep.admissionsgateway.com/learn';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -124,22 +124,22 @@ export default function Navbar() {
           style={{
             fontSize: '12px',
             fontWeight: 700,
-            background: '#1e3a5f',
+            background: 'var(--red)',
             color: '#ffffff',
             padding: '10px 18px',
             borderRadius: '999px',
             textDecoration: 'none',
             letterSpacing: '0.08em',
             textTransform: 'uppercase',
-            boxShadow: '0 12px 24px rgba(30,58,95,0.22)',
+            boxShadow: '0 12px 24px rgba(139,0,0,0.22)',
             transition: 'all 0.2s ease',
           }}
           onMouseEnter={e => {
-            e.currentTarget.style.background = '#274b74';
+            e.currentTarget.style.background = 'var(--red-light)';
             e.currentTarget.style.transform = 'translateY(-1px)';
           }}
           onMouseLeave={e => {
-            e.currentTarget.style.background = '#1e3a5f';
+            e.currentTarget.style.background = 'var(--red)';
             e.currentTarget.style.transform = 'translateY(0)';
           }}
           onClick={() => setMenuOpen(false)}

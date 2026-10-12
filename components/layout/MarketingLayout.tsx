@@ -12,7 +12,7 @@ export default function MarketingLayout({ children }: { children: ReactNode }) {
         <p>Personalised test prep for applicants who want a plan with purpose.</p>
         <div className="footer-links">
           <Link href="/#approach-process">Approach &amp; Process</Link>
-          <Link href="/#our-team">Our Team</Link>
+          <Link href="/our-team">Our Team</Link>
           <Link href="/mentor">Mentor</Link>
           <Link href="/results">Results</Link>
           <Link href="/contact">Contact</Link>
