@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -56,21 +57,15 @@ export default function Navbar() {
           pointerEvents: 'auto',
         }}
       >
-        <Link href="/" style={{ textDecoration: 'none' }}>
-          <span
-            style={{
-              fontFamily: 'Georgia, serif',
-              fontSize: '20px',
-              fontWeight: 900,
-              letterSpacing: '-0.8px',
-              color: '#0a0a0a',
-              display: 'inline-flex',
-              alignItems: 'baseline',
-              gap: '2px',
-            }}
-          >
-            Your<em style={{ fontStyle: 'italic', color: '#8B0000' }}>Score</em>
-          </span>
+        <Link href="/" className="brand-link" aria-label="YourScore home">
+          <Image
+            className="brand-logo"
+            src="/images/brand/your-score-admissions-gateway.jpeg"
+            alt="YourScore by Admissions Gateway"
+            width={180}
+            height={180}
+            priority
+          />
         </Link>
 
         <button

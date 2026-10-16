@@ -102,8 +102,14 @@ export default function Home() {
   if (!showSite) {
     return (
       <div className="site-loader">
-        <span>YOUR</span>
-        <strong>SCORE</strong>
+        <Image
+          className="loader-logo"
+          src="/images/brand/your-score-mark.jpeg"
+          alt="YourScore"
+          width={220}
+          height={220}
+          priority
+        />
         <i />
       </div>
     );
