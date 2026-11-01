@@ -16,7 +16,8 @@ export const metadata = {
 const destinations = [
   { name: 'How it works', copy: 'Our approach and the four steps from first call to test day.', href: '/approach' },
   { name: 'Meet your mentor', copy: '21 years of experience turned into practical, individual guidance.', href: '/mentor' },
-  { name: 'Our team', copy: 'The people who support your preparation day to day.', href: '/our-team' },
+  { name: 'Our team', copy: 'Your mentor and our Quant and Verbal trainers.', href: '/our-team' },
+  { name: 'Pricing and FAQs', copy: 'GMAT and GRE plans, what is included and answers to common questions.', href: '/pricing' },
   { name: 'Student results', copy: 'The scores, the schools and the stories behind them.', href: '/results' },
 ];
 

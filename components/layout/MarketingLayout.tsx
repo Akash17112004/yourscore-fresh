@@ -19,10 +19,16 @@ export default function MarketingLayout({ children }: { children: ReactNode }) {
           <Link href="/approach">How it works</Link>
           <Link href="/mentor">Mentor</Link>
           <Link href="/our-team">Our Team</Link>
+          <Link href="/pricing">Pricing</Link>
           <Link href="/results">Results</Link>
           <Link href="/contact">Contact</Link>
           <Link href="/privacy">Privacy</Link>
+          <Link href="/terms">Terms</Link>
         </nav>
+        <div className="footer-social">
+          <a href="https://www.linkedin.com/company/your-score/" target="_blank" rel="noreferrer">YourScore on LinkedIn<span className="sr-only"> (opens in a new tab)</span></a>
+          <a href="https://in.linkedin.com/in/gurnanishweta" target="_blank" rel="noreferrer">Shweta on LinkedIn<span className="sr-only"> (opens in a new tab)</span></a>
+        </div>
         <span className="footer-copy">© {new Date().getFullYear()} YourScore</span>
       </footer>
     </div>

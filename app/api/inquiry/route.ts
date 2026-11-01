@@ -3,6 +3,9 @@ import { Resend } from 'resend';
 
 export const runtime = 'nodejs';
 
+// Enquiries are delivered here. Override with INQUIRY_TO_EMAIL if it ever changes.
+const DEFAULT_TO = 'info@prepwithyourscore.com';
+
 const clean = (v: unknown, max: number) => (typeof v === 'string' ? v.trim().slice(0, max) : '');
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c] as string));
 
@@ -24,22 +27,44 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'Please fill in the required fields with a valid email.' }, { status: 400 });
   }
 
-  const key = process.env.RESEND_API_KEY;
-  const to = process.env.INQUIRY_TO_EMAIL;
-  if (!key || !to) {
-    return NextResponse.json({ error: 'The form is not connected yet. Please email us directly.' }, { status: 503 });
-  }
+  const to = process.env.INQUIRY_TO_EMAIL || DEFAULT_TO;
+  const subject = `New free call request from ${firstName} ${lastName}`;
+  const html = `<h2>New free call request</h2><p><b>Name:</b> ${esc(firstName)} ${esc(lastName)}</p><p><b>Email:</b> ${esc(email)}</p><p><b>Phone / WhatsApp:</b> ${esc(phone) || '-'}</p><p><b>Preparing for:</b> ${esc(exam) || '-'}</p><p><b>Goal:</b><br>${esc(message).replace(/\n/g, '<br>')}</p>`;
 
   try {
-    const resend = new Resend(key);
-    const { error } = await resend.emails.send({
-      from: process.env.INQUIRY_FROM_EMAIL || 'YourScore <onboarding@resend.dev>',
-      to: [to],
-      replyTo: email,
-      subject: `New call request from ${firstName} ${lastName}`,
-      html: `<p><b>Name:</b> ${esc(firstName)} ${esc(lastName)}</p><p><b>Email:</b> ${esc(email)}</p><p><b>Phone:</b> ${esc(phone) || '-'}</p><p><b>Exam:</b> ${esc(exam) || '-'}</p><p><b>Goal:</b><br>${esc(message).replace(/\n/g, '<br>')}</p>`,
-    });
-    if (error) throw new Error(error.message);
+    const key = process.env.RESEND_API_KEY;
+    if (key) {
+      // Preferred: Resend. Needs a verified sending domain (set INQUIRY_FROM_EMAIL, e.g. "YourScore <noreply@prepwithyourscore.com>").
+      const resend = new Resend(key);
+      const { error } = await resend.emails.send({
+        from: process.env.INQUIRY_FROM_EMAIL || 'YourScore <onboarding@resend.dev>',
+        to: [to],
+        replyTo: email,
+        subject,
+        html,
+      });
+      if (error) throw new Error(error.message);
+    } else {
+      // No key configured: deliver through FormSubmit. The first ever submission sends an
+      // activation email to the recipient, which must be confirmed once.
+      const res = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(to)}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json', Origin: 'https://yourscore-fresh.vercel.app', Referer: 'https://yourscore-fresh.vercel.app/contact' },
+        body: JSON.stringify({
+          _subject: subject,
+          _replyto: email,
+          _captcha: 'false',
+          _template: 'table',
+          Name: `${firstName} ${lastName}`,
+          Email: email,
+          'Phone / WhatsApp': phone || '-',
+          'Preparing for': exam || '-',
+          Goal: message,
+        }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || String(data.success) !== 'true') throw new Error('FormSubmit failed');
+    }
     return NextResponse.json({ ok: true });
   } catch {
     return NextResponse.json({ error: 'We could not send your message. Please email us directly.' }, { status: 502 });

@@ -1,0 +1,17 @@
+export const faqs = [
+  { q: 'What is the fee for GMAT, GRE, EA and SAT preparation?', a: 'Fees vary by exam, learning format and level of support. GMAT and GRE prices are on our pricing section above. For EA and SAT, or to find the right package, connect with our team for a personalised recommendation.' },
+  { q: 'How long does the preparation programme usually take?', a: 'The timeline depends on your current proficiency, target score and study schedule. Programmes range from intensive short-term preparation to structured long-term learning.' },
+  { q: 'Are classes online or offline?', a: 'All our programmes are delivered online, so you can access expert-led classes, study materials and mentoring from anywhere in the world.' },
+  { q: 'How many sessions are conducted per week?', a: 'The number of sessions varies by programme and batch. Students receive a structured schedule before their preparation begins.' },
+  { q: 'How long is each session?', a: 'Most live sessions are approximately 1.5 to 2 hours long, depending on the subject, programme and learning objectives.' },
+  { q: 'Are study materials included?', a: 'Yes. Students get structured study materials, practice questions and relevant learning resources through our student portal.' },
+  { q: 'Are mock tests included?', a: 'Yes. Programmes include practice tests and sectional assessments, depending on the course selected, to help you evaluate progress and exam readiness.' },
+  { q: 'Can a student reschedule a session?', a: 'Rescheduling is available for eligible sessions, subject to advance notice, mentor availability and the applicable programme guidelines.' },
+  { q: 'What is the refund or cancellation policy?', a: 'Because our programmes involve dedicated academic planning, faculty allocation and access to learning resources, enrolments are handled case by case. Please connect with our team and read our Terms & Conditions before enrolling.' },
+  { q: 'What happens if a student’s score does not improve?', a: 'We take a personalised, performance-driven approach. If a student is not progressing as expected, we review their performance, identify areas for improvement and recommend adjustments to their preparation strategy.' },
+  { q: 'Is there a minimum preparation duration?', a: 'There is no universal minimum. The recommended timeline depends on your starting level, target score and the programme you choose.' },
+  { q: 'Can international students enrol?', a: 'Yes. We welcome students from across the globe. Our online programmes let international students access classes, study resources and mentoring remotely.' },
+  { q: 'Does every student receive individual mentoring?', a: 'Personalised guidance is an important part of our approach. The amount of one-on-one mentoring depends on the programme selected, with dedicated individual support in specific course options.' },
+  { q: 'Is a diagnostic test conducted before starting?', a: 'Yes. We recommend an initial assessment to understand your current proficiency, identify strengths and weaknesses and build a strategy aligned with your target score.' },
+  { q: 'Can a student join if they have already attempted the exam?', a: 'Yes. Students who have previously attempted the GRE, GMAT, EA or SAT are welcome. We evaluate their previous performance, identify improvement areas and recommend a targeted plan.' },
+];

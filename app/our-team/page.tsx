@@ -1,36 +1,39 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import MarketingLayout from '@/components/layout/MarketingLayout';
+import PageHero from '@/components/ui/PageHero';
 import { teamMembers } from '@/lib/team';
 
-export const metadata = { title: 'Our team' };
+export const metadata = {
+  title: 'Our team',
+  description: 'Meet the YourScore team: mentor Shweta Gurnani, Senior Quant Trainer Aman Shrisunder and Senior Verbal Trainer Charu Khetawat.',
+};
 
 export default function OurTeamPage() {
-  const members = teamMembers.filter((m) => m.published);
   return (
     <MarketingLayout>
-      <section className="team-section team-page page-frame">
-        <div className="section-heading center-heading">
-          <p className="eyebrow">Our team</p>
-          <h1 className="team-page-title">
-            Led by one mentor,<br /><em>supported by a team.</em>
-          </h1>
-          <p style={{ maxWidth: 560, margin: '18px auto 0', color: 'var(--muted)', lineHeight: 1.7 }}>
-            Shweta personally leads your preparation. The team handles scheduling, practice review and day-to-day support.
-          </p>
-        </div>
-        <div className="team-grid">
-          {members.map((m) => (
-            <article className="team-card" key={m.name + m.role}>
-              <div className="team-photo" aria-label={m.name} style={{ position: 'relative', overflow: 'hidden' }}>
-                {m.photo ? <Image src={m.photo} alt={m.name} fill sizes="160px" style={{ objectFit: 'cover', objectPosition: 'center 20%' }} /> : m.initials}
-              </div>
-              <h3>{m.name}</h3>
-              <p className="team-role">{m.role}</p>
-              <p className="team-bio">{m.bio}</p>
-            </article>
-          ))}
-        </div>
+      <PageHero eyebrow="Our team" title={<>Led by one mentor,<br /><em>supported by experts.</em></>}>
+        Shweta personally leads your preparation. Our Quant and Verbal trainers add deep subject expertise.
+      </PageHero>
+      <section className="team-profiles page-frame">
+        {teamMembers.map((m) => (
+          <article className="team-profile" key={m.name}>
+            <div className="team-profile-photo">
+              <Image src={m.photo} alt={`${m.name}, ${m.role}`} fill sizes="(max-width: 900px) 80vw, 320px" style={{ objectFit: 'cover', objectPosition: m.objectPosition ?? 'center 20%' }} />
+            </div>
+            <div className="team-profile-body">
+              <p className="eyebrow">{m.role}</p>
+              <h2>{m.name}</h2>
+              <p className="team-profile-summary">{m.summary}</p>
+              <h3>Focus areas</h3>
+              <ul>{m.focus.map((f) => <li key={f}>{f}</li>)}</ul>
+              <h3>Why students benefit</h3>
+              <p>{m.why}</p>
+            </div>
+          </article>
+        ))}
       </section>
+      <section className="page-cta page-frame"><p>Want to work with the team?</p><Link className="primary-link" href="/contact">Book a free call <span>→</span></Link></section>
     </MarketingLayout>
   );
 }

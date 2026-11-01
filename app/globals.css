@@ -961,3 +961,47 @@ h1, h2, h3, h4, .hero-heading, .page-hero h1, .hero-stats dd, .results-summary d
 .achievement-tabs button { min-height: 48px; min-width: 150px; font-size: 14px; letter-spacing: .04em; }
 .achievement-tabs button.is-active, .achievement-tabs button[aria-selected="true"] { background: var(--navy); color: #fff; }
 .achievement-tabs button:not([aria-selected="true"]):hover { background: var(--navy-pale); color: var(--navy); }
+
+/* ===== Team profiles, pricing, FAQs, legal ===== */
+.team-profiles { display: grid; gap: 28px; padding-block: 64px 40px; }
+.team-profile { display: grid; grid-template-columns: 300px 1fr; gap: 40px; padding: 28px; border: 1px solid var(--border); border-radius: 24px; background: var(--surface); }
+.team-profile-photo { position: relative; width: 100%; aspect-ratio: 1; border-radius: 18px; overflow: hidden; background: var(--surface-soft); }
+.team-profile h2 { margin: 8px 0 12px; font-family: Georgia, serif; font-size: clamp(30px, 3.4vw, 44px); }
+.team-profile h3 { margin: 22px 0 8px; font-size: 15px; letter-spacing: .04em; color: var(--navy); }
+.team-profile p { color: var(--muted); line-height: 1.7; font-size: 16px; }
+.team-profile ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; color: var(--muted); line-height: 1.6; }
+.team-profile-summary { color: var(--ink) !important; font-size: 17px !important; }
+.plans-section { padding-block: 56px 24px; }
+.plan-tabs { display: inline-flex; padding: 4px; margin-bottom: 28px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface-soft); }
+.plan-tabs button { min-height: 44px; min-width: 110px; padding: 0 22px; border: 0; border-radius: 999px; background: transparent; font: inherit; font-weight: 700; color: var(--muted); cursor: pointer; }
+.plan-tabs button[aria-selected="true"] { background: var(--navy); color: #fff; }
+.plan-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: stretch; }
+.plan-card { display: flex; flex-direction: column; gap: 14px; padding: 28px; border: 1px solid var(--border); border-radius: 22px; background: var(--surface); }
+.plan-card.is-featured { border: 2px solid var(--navy); box-shadow: 0 18px 40px rgba(30,58,95,.12); }
+.plan-badge { align-self: flex-start; padding: 4px 12px; border-radius: 999px; background: var(--navy-pale); color: var(--navy); font-size: 13px; font-weight: 700; }
+.plan-badge--empty { background: transparent; }
+.plan-card h3 { font-family: Georgia, serif; font-size: 28px; }
+.plan-price { font-family: Georgia, serif; font-size: 40px; font-weight: 700; line-height: 1; }
+.plan-price small { font-family: inherit; font-size: 15px; font-weight: 500; color: var(--muted); }
+.plan-note { color: var(--muted); line-height: 1.6; font-size: 15px; }
+.plan-card ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; flex: 1; }
+.plan-card li { padding-left: 24px; position: relative; font-size: 15px; }
+.plan-card li::before { content: '✓'; position: absolute; left: 0; color: var(--navy); font-weight: 700; }
+.plan-card .primary-link { align-self: flex-start; }
+.faq-section { padding-block: 72px 24px; max-width: 900px; margin-inline: auto; }
+.faq-list { display: grid; margin-top: 28px; border-top: 1px solid var(--border); }
+.faq-list details { border-bottom: 1px solid var(--border); }
+.faq-list summary { cursor: pointer; list-style: none; padding: 20px 40px 20px 0; position: relative; font-weight: 600; font-size: 18px; min-height: 44px; }
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: '+'; position: absolute; right: 6px; top: 50%; transform: translateY(-50%); font-size: 26px; color: var(--navy); }
+.faq-list details[open] summary::after { content: '\2212'; }
+.faq-list details p { padding: 0 0 22px; color: var(--muted); line-height: 1.75; font-size: 16px; max-width: 760px; }
+.legal-text h3 { margin: 20px 0 6px; font-size: 18px; }
+.legal-text ul { margin: 8px 0 14px; padding-left: 22px; display: grid; gap: 6px; color: var(--muted); line-height: 1.7; }
+.legal-text strong { color: var(--ink); }
+.footer-social { display: flex; flex-wrap: wrap; gap: 0 8px; }
+.footer-social a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 10px; color: var(--navy); font-size: 14px; text-decoration: underline; text-underline-offset: 3px; }
+.nav-links a { padding-inline: 10px !important; }
+@media (max-width: 1100px) { .plan-grid { grid-template-columns: 1fr; } .nav-links a { font-size: 12.5px !important; padding-inline: 8px !important; } }
+@media (max-width: 900px) { .team-profile { grid-template-columns: 1fr; gap: 24px; } .team-profile-photo { max-width: 360px; } .destination-section { grid-template-columns: 1fr; } }
+.team-profile ul, .legal-text ul { list-style: disc; }

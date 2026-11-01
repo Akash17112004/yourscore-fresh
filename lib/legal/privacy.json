@@ -1,0 +1,987 @@
+[
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "PRIVACY POLICY",
+    "b": true,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Your Score by Admissions Gateway",
+    "b": true,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Last Updated: 1 November 2026",
+    "b": true,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "h2",
+  "t": "1. Introduction"
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Welcome to Your Score by Admissions Gateway (\"Your Score\", \"we\", \"our\", or \"us\").",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "We are committed to protecting the privacy and personal information of our students, prospective students, website visitors, and other individuals who interact with our services.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "This Privacy Policy explains how we collect, use, store, process, and protect your personal information when you visit our website, register for our programmes, access our student portal, or communicate with our team.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "By using our website or services, you acknowledge that you have read and understood this Privacy Policy.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "h2",
+  "t": "2. Information We Collect"
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "We may collect the following categories of information:",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "h3",
+  "t": "A. Personal Information"
+ },
+ {
+  "k": "ul",
+  "i": [
+   [
+    {
+     "t": "Full name",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Email address",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Mobile number",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Country and location",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Educational background",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Academic and professional details",
+     "b": false,
+     "i": false
+    }
+   ]
+  ]
+ },
+ {
+  "k": "h3",
+  "t": "B. Academic Information"
+ },
+ {
+  "k": "ul",
+  "i": [
+   [
+    {
+     "t": "Previous GRE, GMAT, EA or SAT scores, where applicable",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Target examination scores",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Diagnostic test results",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Practice test and mock test performance",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Learning progress and academic records",
+     "b": false,
+     "i": false
+    }
+   ]
+  ]
+ },
+ {
+  "k": "h3",
+  "t": "C. Payment Information"
+ },
+ {
+  "k": "ul",
+  "i": [
+   [
+    {
+     "t": "Transaction details",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Payment confirmations",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Billing information",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Invoice and tax-related details, where applicable",
+     "b": false,
+     "i": false
+    }
+   ]
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Payments are processed through authorised third-party payment service providers. We do not intend to collect or store complete payment card details on our own servers.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "h3",
+  "t": "D. Technical Information"
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "When you visit our website or use our online platforms, we may collect:",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "ul",
+  "i": [
+   [
+    {
+     "t": "IP address",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Browser and device information",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Website usage information",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Login and access records",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Cookies and similar tracking technologies, where enabled",
+     "b": false,
+     "i": false
+    }
+   ]
+  ]
+ },
+ {
+  "k": "h2",
+  "t": "3. How We Use Your Information"
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "We use the information collected for the following purposes:",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "ul",
+  "i": [
+   [
+    {
+     "t": "To respond to programme enquiries and admission requests.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "To register and onboard students into our programmes.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "To provide access to our student portal and learning resources.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "To deliver online classes, mentoring, and academic support.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "To assess student performance and track preparation progress.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "To communicate important programme updates, schedules, and announcements.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "To process payments and generate invoices.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "To improve our teaching methodologies, website, and learning experience.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "To share relevant programme updates, events, and promotional communications, where permitted.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "To maintain internal records and comply with applicable legal requirements.",
+     "b": false,
+     "i": false
+    }
+   ]
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "We process personal information only for legitimate and specified purposes, in accordance with applicable laws.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "h2",
+  "t": "4. Sharing of Information"
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Your Score does not sell or rent students' personal information to third parties.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "However, we may share relevant information with trusted third-party service providers when necessary to operate our services, including:",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "ul",
+  "i": [
+   [
+    {
+     "t": "Payment Gateways:",
+     "b": true,
+     "i": false
+    },
+    {
+     "t": " To securely process programme payments and transactions.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Technology Providers:",
+     "b": true,
+     "i": false
+    },
+    {
+     "t": " To maintain our website, student portal, hosting infrastructure, and communication systems.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Learning Platforms:",
+     "b": true,
+     "i": false
+    },
+    {
+     "t": " To facilitate online classes, course delivery, and academic resources.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Communication Services:",
+     "b": true,
+     "i": false
+    },
+    {
+     "t": " To send important updates, emails, and programme notifications.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Professional Advisors:",
+     "b": true,
+     "i": false
+    },
+    {
+     "t": " Where necessary for accounting, taxation, legal, or compliance purposes.",
+     "b": false,
+     "i": false
+    }
+   ]
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Such information is shared only to the extent reasonably necessary for the relevant purpose, subject to applicable legal requirements and appropriate safeguards.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "h2",
+  "t": "5. Cookies and Tracking Technologies"
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Our website may use cookies and similar technologies to improve website functionality, understand visitor behaviour, and enhance the overall user experience.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Cookies may help us:",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "ul",
+  "i": [
+   [
+    {
+     "t": "Remember user preferences.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Understand website traffic and usage patterns.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Improve website performance.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Support relevant marketing and communication activities.",
+     "b": false,
+     "i": false
+    }
+   ]
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "You can manage or disable cookies through your browser settings. Please note that disabling certain cookies may affect some website functionalities.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Where required, we will seek appropriate consent before using non-essential cookies or tracking technologies.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "h2",
+  "t": "6. Data Storage and Security"
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "We take reasonable technical and organisational measures to protect personal information against unauthorised access, disclosure, alteration, misuse, or loss.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "These measures may include:",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "ul",
+  "i": [
+   [
+    {
+     "t": "Restricted access to student information.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Secure authentication and access controls.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Use of trusted technology and hosting providers.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Appropriate data protection and security practices.",
+     "b": false,
+     "i": false
+    }
+   ]
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "While we make reasonable efforts to protect your information, no method of electronic storage or internet transmission can be guaranteed to be completely secure.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "h2",
+  "t": "7. Data Retention"
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "We retain personal information only for as long as necessary to fulfil the purposes for which it was collected, including academic support, programme administration, legal compliance, accounting, and dispute resolution.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Once the information is no longer required for these purposes, we take appropriate steps to delete or anonymise it, subject to applicable legal and regulatory retention requirements.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "h2",
+  "t": "8. Your Privacy Rights"
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Subject to applicable laws, individuals may have the right to:",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "ul",
+  "i": [
+   [
+    {
+     "t": "Request information about the personal data being processed.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Request correction or updating of inaccurate information.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Request deletion of personal information, where applicable.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Withdraw consent for the processing of personal information.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Raise concerns or complaints regarding the use of personal information.",
+     "b": false,
+     "i": false
+    }
+   ],
+   [
+    {
+     "t": "Nominate another individual to exercise applicable rights in accordance with the law.",
+     "b": false,
+     "i": false
+    }
+   ]
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Requests relating to personal information may be submitted using the contact details provided in this Privacy Policy.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Withdrawal of consent may affect our ability to provide certain services that depend on the relevant information.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "h2",
+  "t": "9. International Students and Data Processing"
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Your Score welcomes students from different countries through its online learning programmes.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Depending on the services used, personal information may be processed or stored through technology providers located in India or other jurisdictions.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Where personal information is transferred across borders, we take appropriate steps to ensure that such processing is carried out in accordance with applicable data protection laws.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "h2",
+  "t": "10. Children's Privacy"
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Our programmes may be accessed by students below the age of 18.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Where we collect or process personal information belonging to individuals below the age of 18, we will take appropriate steps to obtain verifiable parental or lawful guardian consent and comply with applicable legal requirements.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "We do not knowingly collect children's personal information without the required authorisation.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "h2",
+  "t": "11. Third-Party Websites and Services"
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Our website or student portal may contain links to third-party websites, applications, or services.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "These external platforms operate independently and may have their own privacy policies and terms of use.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Your Score is not responsible for the privacy practices, security, or content of third-party websites. We encourage users to review the relevant policies before sharing personal information with such platforms.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "h2",
+  "t": "12. Marketing and Communications"
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "We may use your contact information to share relevant information about our programmes, upcoming batches, workshops, events, academic resources, and other updates.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "You may opt out of promotional communications at any time by using the unsubscribe option, where available, or by contacting our team.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Please note that you may continue to receive essential communications related to your enrolment, payments, classes, and student account.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "h2",
+  "t": "13. Changes to This Privacy Policy"
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "We reserve the right to update or modify this Privacy Policy from time to time to reflect changes in our services, business practices, technology, or applicable laws.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Any updates will be published on this webpage along with the revised \"Last Updated\" date.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "We encourage users to review this page periodically to stay informed about how their personal information is handled.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "h2",
+  "t": "14. Contact Us"
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "If you have any questions, concerns, or requests regarding this Privacy Policy or the handling of your personal information, you may contact us at:",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Your Score by Admissions Gateway",
+    "b": true,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Email: info@prepwithyourscore.com",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Website: [Insert website URL]",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "For privacy-related requests, please mention \"Privacy Policy Request\" in the subject line of your email.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "We will make reasonable efforts to review and respond to your requests in accordance with applicable laws.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Your Score by Admissions Gateway",
+    "b": true,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Empowering students with structured preparation and personalised academic guidance.",
+    "b": false,
+    "i": true
+   }
+  ]
+ }
+]
