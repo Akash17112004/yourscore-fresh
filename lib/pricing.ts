@@ -3,43 +3,40 @@ export type Plan = {
   price: string;
   format: string;
   oneToOne: string;
+  audience: string;
   badge?: string;
-  note: string;
-  includes: string[];
 };
 
-export const GST_NOTE = 'Prices exclude GST. 18% GST is added at checkout.';
+export const GST_NOTE = 'Prices exclude GST. 18% GST is added to the final amount.';
+export const ENROLMENT_NOTE = 'After your free call we confirm the right plan with you and share the payment details.';
 
 const premium = (exam: 'GMAT' | 'GRE'): Plan => ({
   name: `${exam} Premium`,
   price: '₹62,000',
   format: 'Live cohort classes',
-  oneToOne: '5 hours of 1-1 mentoring',
+  oneToOne: '5 hours',
+  audience: 'Live classes plus limited personal support. Better value than buying the cohort and 5 hours of 1:1 separately.',
   badge: 'Recommended',
-  note: 'Live classes with limited personal support. Better value than buying the cohort and 5 hours of 1-1 separately.',
-  includes: ['Live cohort classes', '5 hours of 1-1 mentoring'],
+});
+
+const hybrid = (exam: 'GMAT' | 'GRE'): Plan => ({
+  name: `${exam} Elite Hybrid`,
+  price: '₹75,000',
+  format: 'Self-paced, pre-recorded',
+  oneToOne: '15 hours',
+  audience: 'For students who already know the content and want to raise a score, with recorded lessons and substantial 1:1 support.',
 });
 
 const elite = (exam: 'GMAT' | 'GRE'): Plan => ({
   name: `${exam} Elite`,
   price: '₹1,00,000',
   format: 'Live cohort classes',
-  oneToOne: '15 hours of 1-1 mentoring',
-  badge: 'Best value for maximum support',
-  note: 'Strong live instruction plus substantial individual mentoring.',
-  includes: ['Live cohort classes', '15 hours of 1-1 mentoring'],
+  oneToOne: '15 hours',
+  audience: 'Strong live instruction plus substantial individual mentoring.',
 });
 
-const hybrid = (exam: 'GMAT' | 'GRE'): Plan => ({
-  name: `${exam} Elite Hybrid`,
-  price: '₹75,000',
-  format: 'Self-paced, pre-recorded content',
-  oneToOne: '15 hours of 1-1 mentoring',
-  note: 'For score improvement only. Recorded content with substantial 1-1 support.',
-  includes: ['Self-paced, pre-recorded content', '15 hours of 1-1 mentoring'],
-});
-
+// Ordered by price, lowest first.
 export const pricing: Record<'GMAT' | 'GRE', Plan[]> = {
-  GMAT: [premium('GMAT'), elite('GMAT'), hybrid('GMAT')],
-  GRE: [premium('GRE'), elite('GRE'), hybrid('GRE')],
+  GMAT: [premium('GMAT'), hybrid('GMAT'), elite('GMAT')],
+  GRE: [premium('GRE'), hybrid('GRE'), elite('GRE')],
 };

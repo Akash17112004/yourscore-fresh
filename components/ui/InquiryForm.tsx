@@ -44,8 +44,8 @@ export default function InquiryForm() {
       <label>Tell us about your goal *<textarea required name="message" rows={5} placeholder="Target score, exam date or schools on your list" /></label>
       <input className="hp-field" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" />
       <button type="submit" disabled={status === 'sending'}>{status === 'sending' ? 'Sending...' : 'Book a free call'} <span aria-hidden="true">→</span></button>
-      <p className="form-note">Fields marked * are required. We use your details only to arrange your call. We aim to reply within 1 hour. <Link href="/privacy">Privacy policy</Link> and <Link href="/terms">Terms</Link></p>
-      {status === 'sent' && <p className="form-confirmation" role="status">Thank you. We have received your request and aim to reply within 1 hour.</p>}
+      <p className="form-note">Fields marked * are required. We use your details only to arrange your call. We reply within 1 working day. <Link href="/privacy">Privacy policy</Link> and <Link href="/terms">Terms</Link></p>
+      {status === 'sent' && <p className="form-confirmation" role="status">Thank you. We have received your request and will reply within 1 working day.</p>}
       {status === 'error' && <p className="form-error" role="alert">{error} <a href="mailto:info@prepwithyourscore.com">info@prepwithyourscore.com</a></p>}
     </form>
   );

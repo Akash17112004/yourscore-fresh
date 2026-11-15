@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import MarketingLayout from '@/components/layout/MarketingLayout';
 
+export const metadata = { title: { absolute: 'Page not found | YourScore' }, robots: { index: false } };
+
 export default function NotFound() {
   return (
     <MarketingLayout>

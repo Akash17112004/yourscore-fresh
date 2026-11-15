@@ -13,11 +13,11 @@ export const metadata = { title: 'Student results', description: 'GMAT and GRE s
 export default function ResultsPage() {
   return <MarketingLayout>
     <PageHero eyebrow="Student results" title={<>Scores that<br /><em>prove it.</em></>}>More options, stronger applications and students who arrived ready on test day.</PageHero>
-    <ScrollReveal><section className="results-summary page-frame"><dl>{stats.map((s) => <div key={s.label}><dt>{s.label}</dt><dd>{s.value}</dd></div>)}</dl><p className="stats-note">{statsNote}</p></section></ScrollReveal>
-    <section className="results-motion-section"><div className="page-frame results-motion-intro"><ScrollReveal><div><p className="eyebrow">What students say</p><h2>High scores are<br /><em>never an accident.</em></h2></div></ScrollReveal><ScrollReveal delay={0.1}><p>Each story began with a different profile. The common thread is a strategy that made progress visible and test day manageable.</p></ScrollReveal></div>
+    <ScrollReveal><section className="results-summary page-frame"><dl>{stats.map((s) => <div key={s.label}><dt>{s.label}</dt><dd>{s.value}</dd></div>)}</dl><p className="stats-note">{statsNote}</p><p className="results-jump"><a href="#hall">See the full score list</a> · <a href="#stories">Read student stories</a></p></section></ScrollReveal>
+        <AchievementHall />
+    <section className="results-motion-section" id="stories"><div className="page-frame results-motion-intro"><ScrollReveal><div><p className="eyebrow">What students say</p><h2>High scores are<br /><em>never an accident.</em></h2></div></ScrollReveal><ScrollReveal delay={0.1}><p>Each story began with a different profile. The common thread is a strategy that made progress visible and test day manageable.</p></ScrollReveal></div>
       <div className="page-frame"><StoryCarousel>{stories.map((s) => <TestimonialCard key={s.name} {...s} />)}</StoryCarousel></div>
     </section>
-    <AchievementHall />
     <ScrollReveal><section className="page-cta page-frame"><p>Let&apos;s build your own score story.</p><Link className="primary-link" href="/contact">Book a free call <span>→</span></Link></section></ScrollReveal>
   </MarketingLayout>;
 }

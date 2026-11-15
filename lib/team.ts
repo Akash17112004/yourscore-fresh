@@ -5,7 +5,11 @@ export type TeamMember = {
   objectPosition?: string;
   summary: string;
   focus: string[];
-  why: string;
+  bestFor: string;
+  fullProfile: string;
+  more: string[];
+  linkedin?: string;
+  profileHref?: string;
 };
 
 export const teamMembers: TeamMember[] = [
@@ -14,37 +18,38 @@ export const teamMembers: TeamMember[] = [
     role: 'Chief Academic Mentor',
     photo: '/images/shweta-gurnani.jpeg',
     objectPosition: 'center 15%',
-    summary: 'Leads every student’s preparation personally, with 21 years of experience and a clear framework for sustainable score improvement.',
-    focus: ['Diagnosis and score-gap analysis', 'Personal preparation plans', 'GMAT, GRE, EA and SAT strategy'],
-    why: 'Shweta stays involved from the first call to test day, so feedback gets sharper as you progress.',
+    summary: 'Leads your preparation plan, with 21 years of mentoring GMAT, GRE, EA and SAT students.',
+    focus: ['Diagnosis and score-gap analysis', 'Personal preparation plans', 'Strategy across all four exams'],
+    bestFor: 'Students who want one person accountable for their plan.',
+    fullProfile: '',
+    more: [],
+    linkedin: 'https://in.linkedin.com/in/gurnanishweta',
+    profileHref: '/mentor',
   },
   {
     name: 'Aman Shrisunder',
     role: 'Senior Quant Trainer',
     photo: '/images/team/aman-shrisunder.jpg',
-    summary: 'With 8+ years in education and test preparation, Aman brings deep expertise in Quantitative Aptitude, with a focus on helping GRE and GMAT aspirants build conceptual clarity and test-taking strategy. An NIT Durgapur alumnus, he has worked with aspirants preparing for competitive graduate-management and study-abroad examinations.',
-    focus: [
-      'GMAT Quant: strong fundamentals and advanced problem-solving',
-      'GRE Quant: concepts, accuracy and time management',
-      'Test-taking strategy: how to approach a question, not just how to solve it',
-      'Error analysis and improvement: turning recurring mistakes into score gains',
-      'Personalised mentoring for your current level and target score',
-    ],
-    why: 'Aman goes beyond formulas. He builds the thinking framework needed for unfamiliar and high-difficulty questions, helping students become faster, more accurate and more confident.',
+    summary: '8+ years teaching GMAT and GRE Quant, with a focus on concepts and test strategy. NIT Durgapur alumnus.',
+    focus: ['GMAT and GRE Quant', 'Error analysis', 'Test-day timing'],
+    bestFor: 'Students who want stronger Quant fundamentals and faster, more accurate solving.',
+    fullProfile: 'With 8+ years in education and test preparation, Aman specialises in Quant for GMAT and GRE students. He builds conceptual clarity and test-taking strategy, and teaches the thinking needed for unfamiliar and high-difficulty questions. An NIT Durgapur alumnus.',
+    more: ['GMAT Quant: fundamentals and advanced problem solving', 'GRE Quant: concepts, accuracy and time management', 'How to approach a question, not just how to solve it', 'Turning recurring mistakes into score gains'],
   },
   {
     name: 'Charu Khetawat',
     role: 'Senior Verbal Trainer',
     photo: '/images/team/charu-khetawat.jpg',
-    summary: 'With 20+ years in education and test preparation, Charu is a highly experienced Verbal specialist for the GMAT and GRE. She was promoted to Pan-India Verbal Faculty Trainer and has trained 20+ trainers in GMAT, GRE and SAT instruction.',
-    focus: [
-      'GMAT Verbal: structured approaches to Critical Reasoning and Reading Comprehension',
-      'GRE Verbal: comprehension, reasoning and verbal strategy',
-      'Question-solving strategy for each question type',
-      'Accuracy and time management under test conditions',
-      'Conceptual clarity: the logic behind questions, not shortcuts',
-      'Personalised mentoring to find your gaps and build a focused improvement path',
-    ],
-    why: 'Charu brings two decades of understanding how students learn, where they struggle and what it takes to move from preparation to test-day performance.',
+    summary: '20+ years teaching GMAT and GRE Verbal. Pan-India Verbal Faculty Trainer who has trained 20+ trainers.',
+    focus: ['GMAT and GRE Verbal', 'Critical Reasoning and Reading', 'Accuracy under time'],
+    bestFor: 'Students who need a clear method for Verbal questions.',
+    fullProfile: 'With 20+ years in education and test preparation, Charu teaches Verbal for the GMAT and GRE. As a Pan-India Verbal Faculty Trainer she has trained 20+ trainers in GMAT, GRE and SAT instruction. She focuses on the logic behind each question type, so students learn a method rather than shortcuts.',
+    more: ['GMAT Verbal: Critical Reasoning and Reading Comprehension', 'GRE Verbal: comprehension, reasoning and strategy', 'A strategy for each question type', 'Finding your gaps and building a focused plan'],
   },
+];
+
+export const teamWorks = [
+  { title: 'Shweta leads your plan', copy: 'She runs your diagnostic, sets your preparation plan and tracks your progress.' },
+  { title: 'Trainers add subject depth', copy: 'Aman covers Quant and Charu covers Verbal, so every section has a specialist.' },
+  { title: 'You start with one call', copy: 'Book a free call and we suggest the plan that fits your target and schedule.' },
 ];

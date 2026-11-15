@@ -6,20 +6,14 @@ import ScrollReveal from '@/components/ui/ScrollReveal';
 import TestimonialCard from '@/components/ui/TestimonialCard';
 import { stories } from '@/lib/results';
 import { stats, statsNote } from '@/lib/stats';
+import FaqList from '@/components/ui/FaqList';
+import { homeFaqs } from '@/lib/faqs';
 import { processSteps } from '@/lib/steps';
 
 export const metadata = {
   title: { absolute: 'YourScore | GMAT, GRE, EA & SAT coaching' },
-  description: '1:1 coaching for the GMAT, GRE, Executive Assessment (EA) and SAT. 21 years of mentoring, 4,000+ students guided, average GMAT 730.',
+  description: 'Live classes and 1:1 mentoring for the GMAT, GRE, Executive Assessment (EA) and SAT. 21 years of mentoring, 4,000+ students guided, average GMAT 730.',
 };
-
-const destinations = [
-  { name: 'How it works', copy: 'Our approach and the four steps from first call to test day.', href: '/approach' },
-  { name: 'Meet your mentor', copy: '21 years of experience turned into practical, individual guidance.', href: '/mentor' },
-  { name: 'Our team', copy: 'Your mentor and our Quant and Verbal trainers.', href: '/our-team' },
-  { name: 'Pricing and FAQs', copy: 'GMAT and GRE plans, what is included and answers to common questions.', href: '/pricing' },
-  { name: 'Student results', copy: 'The scores, the schools and the stories behind them.', href: '/results' },
-];
 
 const homeStories = stories.filter((s) => ['Sushant Sudheendranath', 'Sanchit Dayal', 'Rajat Kadam', 'Aniket Saha'].includes(s.name));
 
@@ -35,11 +29,12 @@ export default function Home() {
           <p className="eyebrow">GMAT · GRE · EA · SAT coaching</p>
           <h1 className="hero-heading">Your exam.<em>Your score.</em></h1>
           <p className="hero-subtext">
-            Strategic 1:1 coaching for ambitious applicants. Get a plan built around your score gap, your schedule and the schools that matter to you.
+            Live classes and 1:1 mentoring for ambitious applicants, with a plan built around your score gap, your schedule and the schools that matter to you.
           </p>
 
           <div className="hero-cta-row">
             <Link className="primary-link hero-signup" href="/contact">Book a free call <span>→</span></Link>
+            <Link className="hero-price" href="/pricing">GMAT and GRE plans from &#8377;62,000 + GST</Link>
           </div>
 
           <dl className="hero-stats">
@@ -90,16 +85,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="destination-section page-frame" aria-label="Explore the site">
-        {destinations.map((item) => (
-          <Link className="destination-card" href={item.href} key={item.href}>
-            <div>
-              <h3>{item.name}</h3>
-              <p>{item.copy}</p>
-            </div>
-            <b aria-hidden="true">→</b>
-          </Link>
-        ))}
+      <section className="home-faq page-frame" aria-labelledby="home-faq-title">
+        <div className="section-heading">
+          <p className="eyebrow">FAQs</p>
+          <h2 id="home-faq-title">Quick answers<br /><em>before you book.</em></h2>
+        </div>
+        <FaqList items={homeFaqs} />
+        <Link className="text-link" href="/pricing#faq">See all questions →</Link>
       </section>
     </MarketingLayout>
   );

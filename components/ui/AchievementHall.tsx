@@ -55,7 +55,7 @@ export default function AchievementHall() {
   };
 
   return (
-    <section className="achievement-hall page-frame" aria-labelledby="achievement-heading">
+    <section className="achievement-hall page-frame" id="hall" aria-labelledby="achievement-heading">
       <div className="achievement-heading">
         <div>
           <p className="eyebrow">YourScore Hall of Achievement</p>

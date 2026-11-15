@@ -360,7 +360,61 @@
  },
  {
   "k": "h2",
-  "t": "5. Classes and Attendance"
+  "t": "5. Refunds and Cancellation"
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Enrolment in a programme may involve academic planning, faculty allocation, scheduling, and access to proprietary learning resources.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Students are encouraged to review the programme details, scope of services, duration, and applicable terms carefully before making a payment.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Any request relating to cancellation, withdrawal, or refunds will be reviewed based on the circumstances of the enrolment, services already provided, applicable programme commitments, and relevant legal requirements.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Students are encouraged to contact our team directly for assistance with such requests.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "p",
+  "s": [
+   {
+    "t": "Nothing in this section is intended to restrict any statutory rights or remedies available to students under applicable law.",
+    "b": false,
+    "i": false
+   }
+  ]
+ },
+ {
+  "k": "h2",
+  "t": "6. Classes and Attendance"
  },
  {
   "k": "p",
@@ -434,7 +488,7 @@
  },
  {
   "k": "h2",
-  "t": "6. Session Rescheduling and Cancellations"
+  "t": "7. Session Rescheduling and Cancellations"
  },
  {
   "k": "p",
@@ -494,7 +548,7 @@
  },
  {
   "k": "h2",
-  "t": "7. Course Materials and Student Portal Access"
+  "t": "8. Course Materials and Student Portal Access"
  },
  {
   "k": "p",
@@ -561,7 +615,7 @@
  },
  {
   "k": "h2",
-  "t": "8. Intellectual Property Rights"
+  "t": "9. Intellectual Property Rights"
  },
  {
   "k": "p",
@@ -702,7 +756,7 @@
  },
  {
   "k": "h2",
-  "t": "9. Student Conduct"
+  "t": "10. Student Conduct"
  },
  {
   "k": "p",
@@ -776,7 +830,7 @@
  },
  {
   "k": "h2",
-  "t": "10. Academic Performance and Score Disclaimer"
+  "t": "11. Academic Performance and Score Disclaimer"
  },
  {
   "k": "p",
@@ -843,7 +897,7 @@
  },
  {
   "k": "h2",
-  "t": "11. Examination Conduct and Third-Party Organisations"
+  "t": "12. Examination Conduct and Third-Party Organisations"
  },
  {
   "k": "p",
@@ -887,7 +941,7 @@
  },
  {
   "k": "h2",
-  "t": "12. Third-Party Platforms and Services"
+  "t": "13. Third-Party Platforms and Services"
  },
  {
   "k": "p",
@@ -921,7 +975,7 @@
  },
  {
   "k": "h2",
-  "t": "13. Limitation of Liability"
+  "t": "14. Limitation of Liability"
  },
  {
   "k": "p",
@@ -1005,7 +1059,7 @@
  },
  {
   "k": "h2",
-  "t": "14. Suspension or Termination of Services"
+  "t": "15. Suspension or Termination of Services"
  },
  {
   "k": "p",
@@ -1072,60 +1126,6 @@
   "s": [
    {
     "t": "Any consequences relating to payments or access following suspension or termination will be determined in accordance with applicable law and the terms communicated at enrolment.",
-    "b": false,
-    "i": false
-   }
-  ]
- },
- {
-  "k": "h2",
-  "t": "15. Refunds and Cancellation"
- },
- {
-  "k": "p",
-  "s": [
-   {
-    "t": "Enrolment in a programme may involve academic planning, faculty allocation, scheduling, and access to proprietary learning resources.",
-    "b": false,
-    "i": false
-   }
-  ]
- },
- {
-  "k": "p",
-  "s": [
-   {
-    "t": "Students are encouraged to review the programme details, scope of services, duration, and applicable terms carefully before making a payment.",
-    "b": false,
-    "i": false
-   }
-  ]
- },
- {
-  "k": "p",
-  "s": [
-   {
-    "t": "Any request relating to cancellation, withdrawal, or refunds will be reviewed based on the circumstances of the enrolment, services already provided, applicable programme commitments, and relevant legal requirements.",
-    "b": false,
-    "i": false
-   }
-  ]
- },
- {
-  "k": "p",
-  "s": [
-   {
-    "t": "Students are encouraged to contact our team directly for assistance with such requests.",
-    "b": false,
-    "i": false
-   }
-  ]
- },
- {
-  "k": "p",
-  "s": [
-   {
-    "t": "Nothing in this section is intended to restrict any statutory rights or remedies available to students under applicable law.",
     "b": false,
     "i": false
    }
@@ -1217,7 +1217,7 @@
   "k": "p",
   "s": [
    {
-    "t": "Any disputes arising in connection with these Terms & Conditions shall be subject to the jurisdiction of the competent courts in [Insert City], India, subject to applicable law.",
+    "t": "Any disputes arising in connection with these Terms & Conditions shall be subject to the jurisdiction of the competent courts in India, subject to applicable law.",
     "b": false,
     "i": false
    }
@@ -1261,7 +1261,7 @@
   "k": "p",
   "s": [
    {
-    "t": "Website: [Insert website URL]",
+    "t": "Website: https://prepwithyourscore.com",
     "b": false,
     "i": false
    }
