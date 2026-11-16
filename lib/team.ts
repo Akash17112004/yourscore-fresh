@@ -34,6 +34,7 @@ export const teamMembers: TeamMember[] = [
     bestFor: 'Students who want stronger Quant fundamentals and faster, more accurate solving.',
     fullProfile: 'With 8+ years in education and test preparation, Aman specialises in Quant for GMAT and GRE students. He builds conceptual clarity and test-taking strategy, and teaches the thinking needed for unfamiliar and high-difficulty questions. An NIT Durgapur alumnus.',
     more: ['GMAT Quant: fundamentals and advanced problem solving', 'GRE Quant: concepts, accuracy and time management', 'How to approach a question, not just how to solve it', 'Turning recurring mistakes into score gains'],
+    linkedin: 'https://www.linkedin.com/in/aman-shrisunder-54176a321',
   },
   {
     name: 'Charu Khetawat',
@@ -44,6 +45,7 @@ export const teamMembers: TeamMember[] = [
     bestFor: 'Students who need a clear method for Verbal questions.',
     fullProfile: 'With 20+ years in education and test preparation, Charu teaches Verbal for the GMAT and GRE. As a Pan-India Verbal Faculty Trainer she has trained 20+ trainers in GMAT, GRE and SAT instruction. She focuses on the logic behind each question type, so students learn a method rather than shortcuts.',
     more: ['GMAT Verbal: Critical Reasoning and Reading Comprehension', 'GRE Verbal: comprehension, reasoning and strategy', 'A strategy for each question type', 'Finding your gaps and building a focused plan'],
+    linkedin: 'https://www.linkedin.com/in/charu-khetawat-902a6597',
   },
 ];
 
