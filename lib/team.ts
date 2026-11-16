@@ -24,7 +24,6 @@ export const teamMembers: TeamMember[] = [
     fullProfile: '',
     more: [],
     linkedin: 'https://in.linkedin.com/in/gurnanishweta',
-    profileHref: '/mentor',
   },
   {
     name: 'Aman Shrisunder',

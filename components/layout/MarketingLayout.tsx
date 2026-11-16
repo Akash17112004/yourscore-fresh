@@ -18,7 +18,6 @@ export default function MarketingLayout({ children }: { children: ReactNode }) {
         <nav className="footer-links" aria-label="Footer">
           <Link href="/approach">How it works</Link>
           <Link href="/results">Results</Link>
-          <Link href="/mentor">Mentor</Link>
           <Link href="/our-team">Our team</Link>
           <Link href="/pricing">Pricing</Link>
           <Link href="/contact">Contact</Link>
