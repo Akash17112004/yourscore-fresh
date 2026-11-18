@@ -27,7 +27,7 @@ export default function Home() {
 
         <div className="page-frame hero-content">
           <p className="eyebrow">GMAT · GRE · EA · SAT coaching</p>
-          <h1 className="hero-heading">Your exam.<em>YourScore.</em></h1>
+          <h1 className="hero-heading">Your Exam.<em>YourScore<span className="brand-dot">.</span></em></h1>
           <p className="hero-subtext">
             Live classes and 1:1 mentoring for ambitious applicants, with a plan built around your score gap, your schedule and the schools that matter to you.
           </p>

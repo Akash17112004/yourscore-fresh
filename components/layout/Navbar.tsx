@@ -105,7 +105,7 @@ export default function Navbar() {
               aria-current={pathname === item.href ? 'page' : undefined}
               style={{
                 fontSize: '13px',
-                color: pathname === item.href ? '#8B0000' : '#4b4b4b',
+                color: pathname === item.href ? '#8B0000' : '#595959',
                 textDecoration: 'none',
                 letterSpacing: '0.12em',
                 textTransform: 'uppercase',
@@ -119,7 +119,7 @@ export default function Navbar() {
                 e.currentTarget.style.background = 'rgba(139,0,0,0.05)';
               }}
               onMouseLeave={e => {
-                e.currentTarget.style.color = '#4b4b4b';
+                e.currentTarget.style.color = '#595959';
                 e.currentTarget.style.background = 'transparent';
               }}
               onClick={() => setMenuOpen(false)}
