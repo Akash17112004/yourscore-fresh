@@ -3,15 +3,15 @@ import { useState, type KeyboardEvent } from 'react';
 import Link from 'next/link';
 import { pricing, GST_NOTE, ENROLMENT_NOTE } from '@/lib/pricing';
 
-const exams = ['GMAT', 'GRE'] as const;
+const exams = ['GRE', 'GMAT'] as const;
 type Exam = (typeof exams)[number];
 
 export default function PricingPlans() {
-  const [exam, setExam] = useState<Exam>('GMAT');
+  const [exam, setExam] = useState<Exam>('GRE');
   const onKey = (e: KeyboardEvent<HTMLButtonElement>) => {
     if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
     e.preventDefault();
-    const next: Exam = exam === 'GMAT' ? 'GRE' : 'GMAT';
+    const next: Exam = exam === 'GRE' ? 'GMAT' : 'GRE';
     setExam(next);
     requestAnimationFrame(() => document.getElementById(`plans-${next}`)?.focus());
   };

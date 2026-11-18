@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { TeamMember } from '@/lib/team';
+import { LinkedInIcon } from '@/components/ui/Icons';
 
 export default function TeamCard({ m, lead = false }: { m: TeamMember; lead?: boolean }) {
   return (
@@ -24,7 +25,7 @@ export default function TeamCard({ m, lead = false }: { m: TeamMember; lead?: bo
         ) : null}
         <div className="team-links">
           {m.profileHref ? <Link href={m.profileHref}>Read {m.name.split(' ')[0]}&rsquo;s full profile →</Link> : null}
-          {m.linkedin ? <a href={m.linkedin} target="_blank" rel="noreferrer">LinkedIn<span className="sr-only"> (opens in a new tab)</span></a> : null}
+          {m.linkedin ? <a className="li-icon" href={m.linkedin} target="_blank" rel="noreferrer" aria-label={`${m.name} on LinkedIn`}><LinkedInIcon /><span className="sr-only"> (opens in a new tab)</span></a> : null}
         </div>
       </div>
     </article>

@@ -1073,3 +1073,14 @@ h1, h2, h3, h4, .hero-heading, .page-hero h1, .hero-stats dd, .results-summary d
 @media (max-width: 900px) { .mentor-proof { grid-template-columns: 1fr; gap: 32px; } .plan-other { flex-direction: column; align-items: flex-start; } }
 .mentor-proof { padding-top: 88px; }
 .mentor-proof h2, .team-profile h2, .team-works h2, .faq-group > h3, .plan-card h3, .step-row h3 { font-weight: 700; }
+
+/* Round 3: contact chips and LinkedIn icon */
+.contact-chip { display: inline-flex !important; align-items: center; gap: 10px; min-height: 48px; padding: 12px 18px !important; border: 1.5px solid var(--text) !important; border-radius: 999px; background: #fff; color: var(--text) !important; font-size: 16px !important; font-weight: 700; text-decoration: none !important; box-shadow: 0 6px 18px rgba(0,0,0,.08); transition: transform .15s, box-shadow .15s, background .15s, color .15s; }
+.contact-chip:hover { background: var(--text); color: #fff !important; transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.16); }
+.mentor-contact { align-items: center; gap: 14px; }
+.contact-sidebar .contact-chip { padding-top: 12px !important; }
+.li-icon { display: inline-flex !important; align-items: center; justify-content: center; width: 44px; height: 44px; min-height: 44px; padding: 0 !important; border: 0 !important; text-decoration: none !important; color: #000 !important; }
+.li-icon:hover svg { opacity: .65; }
+.footer-social .li-icon { padding: 0 !important; }
+.contact-sidebar .contact-chip, .contact-sidebar .li-icon { width: fit-content; align-self: flex-start; }
+.contact-sidebar .li-icon { width: 44px; }

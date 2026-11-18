@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { LinkedInIcon } from '@/components/ui/Icons';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from './Navbar';
@@ -23,8 +24,8 @@ export default function MarketingLayout({ children }: { children: ReactNode }) {
           <Link href="/contact">Contact</Link>
         </nav>
         <div className="footer-social">
-          <a href="https://www.linkedin.com/company/your-score/" target="_blank" rel="noreferrer">YourScore on LinkedIn<span className="sr-only"> (opens in a new tab)</span></a>
-          <a href="https://in.linkedin.com/in/gurnanishweta" target="_blank" rel="noreferrer">Shweta on LinkedIn<span className="sr-only"> (opens in a new tab)</span></a>
+          <a className="li-icon" href="https://www.linkedin.com/company/your-score/" target="_blank" rel="noreferrer" aria-label="YourScore on LinkedIn"><LinkedInIcon /><span className="sr-only"> (opens in a new tab)</span></a>
+          <a className="li-icon" href="https://in.linkedin.com/in/gurnanishweta" target="_blank" rel="noreferrer" aria-label="Shweta Gurnani on LinkedIn"><LinkedInIcon /><span className="sr-only"> (opens in a new tab)</span></a>
         </div>
         <div className="footer-legal">
           <span>© {new Date().getFullYear()} YourScore</span>

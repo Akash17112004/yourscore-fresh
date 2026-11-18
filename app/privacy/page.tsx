@@ -10,7 +10,7 @@ export default function Page() {
   const [, , updated, ...body] = doc as never[];
   const date = ((updated as { s: { t: string }[] }).s ?? []).map((x) => x.t).join('');
   return <MarketingLayout>
-    <PageHero eyebrow="Legal" title={<>Privacy Policy</>}>{date}. Your Score by Admissions Gateway.</PageHero>
+    <PageHero eyebrow="Legal" title={<>Privacy Policy</>}>{date}. YourScore by Admissions Gateway.</PageHero>
     <section className="page-frame legal-text"><LegalDocument blocks={body} /></section>
   </MarketingLayout>;
 }
